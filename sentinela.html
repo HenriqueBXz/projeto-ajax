@@ -1,9 +1,91 @@
-<h1>Sentinelas</h1>
-<ul>
-    <li>Sage</li>
-    <li>Cypher</li>
-    <li>Killjoy</li>
-    <li>Chamber</li>
-    <li>deadlock</li>
-    <li>Vyse</li>
-</ul>
+<h1>Sentinela</h1>
+<div class="st">
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/cypher.jpeg" alt="">
+        </div>
+        <div class="sub-card">
+            <h2>Cypher</h2>
+            <p>Espião marroquino que vigia com câmeras e armadilhas furtivas.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/vse.jpeg" alt="">
+            
+        </div>
+        <div class="sub-card">
+            <h2>Vyse</h2>
+            <p>R$20,00</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/kill.jpeg" alt="">
+        </div>
+        <div class="sub-card">
+            <h2>Killjoy</h2>
+            <p>Gênio alemão que usa torretas e gadgets para controlar o território.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/sage.jpeg" alt="">
+        </div>
+        <div class="sub-card">
+            <h2>Sage</h2>
+            <p>Curadora chinesa que reviva aliados e controla áreas com lentidão.</p>
+        </div>
+    </div>
+    <div>
+        <style>
+            .st {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+            .card {
+                background-color: black;
+                border-radius: 30px;
+                width: 250px;
+                height: 350px;
+                color: white;
+                overflow: hidden;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .top-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                display: block;
+            }
+
+            .sub-card {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            }
+
+            .card {
+                background-color: black;
+                border-radius: 30px;
+                margin: 20px;
+                height: 350px;
+
+            }
+
+            .sub-card p{
+                margin-top: -15px;
+            }
+        </style>

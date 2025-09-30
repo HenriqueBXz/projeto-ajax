@@ -1,9 +1,92 @@
-<h1>Controladores</h1>
-<ul>
-    <li>Brimstone</li>
-    <li>Omen</li>
-    <li>Viper</li>
-    <li>Astra</li>
-    <li>Harbor</li>
-    <li>Clove</li>
-</ul>
+<h1>Controlador</h1>
+<div class="ct">
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/omen.jpeg" alt="">
+        </div>
+        <div class="sub-card">
+            <h2>Omen</h2>
+            <p>Misterioso e sombrio, cega inimigos e se teleporta pelas sombras.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/viper.jpeg" alt="">
+            
+        </div>
+        <div class="sub-card">
+            <h2>Viper</h2>
+            <p>Controla áreas com venenos tóxicos e paredes químicas letais.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/clove.jpeg" alt="">
+        </div>
+        <div class="sub-card">
+            <h2>Clove</h2>
+            <p>Controlador escocês que pode voltar à vida para causar mais impacto.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="top-card">
+            <img src="./img/brim.jpeg" alt="">
+        </div>
+        <div class="sub-card">
+            <h2>Brimstone</h2>
+            <p>Comandante tático que usa fumaças e estímulos para controlar o campo de batalha.</p>
+        </div>
+    </div>
+    <div>
+        <style>
+            .ct {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .card {
+                background-color: black;
+                border-radius: 30px;
+                width: 250px;
+                height: 350px;
+                color: white;
+                overflow: hidden;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .top-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                display: block;
+            }
+
+            .sub-card {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+            justify-content: center;
+            text-align: center;
+            }
+
+            .card {
+                background-color: black;
+                border-radius: 30px;
+                margin: 20px;
+                height: 350px;
+
+            }
+
+            .sub-card p{
+                margin-top: -15px;
+            }
+        </style>

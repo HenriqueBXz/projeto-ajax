@@ -6,37 +6,31 @@
     <meta charset='UTF-8'>
     <title>Mini SPA</title>
     <link rel='stylesheet' href='../css/estilo.css'>
-    <style>
-        nav {
-            font-size: 2em;
-        }
-
-
-        nav a {
-            text-decoration: none;
-            color: #000000ff;
-            padding: 0 0px;
-        }
-    </style>
+    
 </head>
 
 
 <body class="conteudo">
     <nav>
-        <a href wm-link="sentinela.html" wm-destino=".pagina">Sentinela</a> |
+        <a href wm-link="controlador.html" wm-destino=".pagina">Controlador</a> |
         <a href wm-link="duelista.html" wm-destino=".pagina">Duelista</a> |
-        <a href wm-link="controlador.html" wm-destino=".pagina">Controlador</a>
+        <a href wm-link="sentinela.html" wm-destino=".pagina">Sentinela</a>
     </nav>
     <div class="pagina"></div>
+
+    <div class="wrap">
+        <div id="produtos-container" class="row center"></div>
+    </div>
+
     <script>
         function navegarViaAjax(url, seletor, push = true) {
-            if(!url || !seletor) return
+            if (!url || !seletor) return
             const elemento = document.querySelector(seletor)
             fetch(url)
                 .then(resp => resp.text())
                 .then(html => {
                     elemento.innerHTML = html
-                    if(push) {
+                    if (push) {
                         history.pushState({ seletor }, "Página Ajax", url)
                     }
                 })
@@ -56,9 +50,58 @@
 
 
         window.onpopstate = e => {
-            if(e.state) {
+            if (e.state) {
                 navegarViaAjax(window.location.href, e.state.seletor, false)
             }
         }
     </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #888888;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .pagina {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #cfcfcf;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 18px;
+            color: #34495e;
+            margin-bottom: 6px;
+        }
+    </style>
 </body>
